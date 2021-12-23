@@ -1,0 +1,14 @@
+<div>
+  <h2 class='text-white font-medium'>Mars Rover</h2>
+  <p class='text-white'>Photo taken by Rover on Mars.</p>
+
+  <div>
+    <img class='cursor-pointer' style='width: 430px; height: 430px; border: 1px solid white; justify-content: center' :src='currentImage(CurrentImgMars)' />
+    <p class='text-white'>{{CurrentImgMars}} / {{allImages.length}}</p>
+    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-2" @click='onPrevious()'>Previous</button>
+    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-20" @click='onNext()'>Next</button>
+    <button class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded mr-2" @click='toStart()'>To Start</button>
+    <button class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded" @click='toEnd()'>To End</button>
+  </div>
+
+</div>

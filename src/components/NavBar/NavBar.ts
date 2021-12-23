@@ -8,12 +8,8 @@ import { Options, Vue } from 'vue-class-component';
 
 
 @Options({
-  name: 'Header',
-  template: require('./Header.html'),
+  name: 'NavBar',
+  template: require('./NavBar.html'),
   components: {},
 })
-export class IconButton extends Vue {
-  protected didClickOnButton(): void {
-    console.log('click');
-  }
-}
+export class NavBar extends Vue {}

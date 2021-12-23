@@ -1,18 +1,20 @@
 import { createStore } from 'vuex';
 import { getModule } from 'vuex-module-decorators';
 
-import MainStore from './store';
+import MarsRoverStore from './marsRoverStore';
 
 
 const store = createStore({
-  state: {},
+  state: {
+    currentImage:0
+  },
   mutations: {},
   actions: {},
-  modules: {MainStore},
+  modules: {marsRoverStore: MarsRoverStore},
 });
 
 export default store;
 
-export const keySettingsStore = (): MainStore =>
-  getModule(MainStore, store);
+export const marsRoverStore = (): MarsRoverStore =>
+  getModule(MarsRoverStore, store);
 

@@ -9,13 +9,17 @@
   },
   "dependencies": {
     "@kyvg/vue3-notification": "^2.3.4",
+    "@tailwindcss/postcss7-compat": "^2.2.17",
     "@yzfe/svgicon": "^1.1.0",
     "@yzfe/vue3-svgicon": "^1.0.1",
+    "autoprefixer": "^9",
     "axios": "^0.22.0",
     "ci": "^2.1.1",
     "joi": "^17.4.2",
     "lodash": "^4.17.21",
     "nprogress": "^0.2.0",
+    "postcss": "^7",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17",
     "vue": "^3.0.0",
     "vue-class-component": "^8.0.0-0",
     "vue-i18n": "^9.2.0-beta.16",
@@ -48,6 +52,7 @@
     "prettier": "^2.2.1",
     "sass-loader": "^10.1.1",
     "typescript": "~4.1.5",
+    "vue-cli-plugin-tailwind": "~2.2.18",
     "vue-template-compiler": "^2.6.14",
     "webpack": "^4.46.0"
   }

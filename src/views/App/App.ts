@@ -1,11 +1,10 @@
 import { Vue, Options } from 'vue-class-component';
-import Home from '@/views/Home/Home';
+import {NavBar} from '@/components/NavBar/NavBar';
+import { Footer } from '@/components/Footer/Footer';
 // Models
 @Options({
   name: 'App',
   template: require('./App.html'),
-  components: {Home
-
-  },
+  components: {NavBar, Footer},
 })
 export class App extends Vue {}

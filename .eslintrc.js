@@ -16,7 +16,7 @@ module.exports = {
     extraFileExtensions: ['.vue'],
   },
   ignorePatterns: ['src/assets/images/*'],
-  plugins: ['eslint-plugin-import', 'eslint-plugin-prefer-arrow', '@typescript-eslint', '@typescript-eslint/tslint'],
+  plugins: ['eslint-plugin-import', 'eslint-plugin-prefer-arrow', '@typescript-eslint'],
   rules: {
     'no-useless-catch': 'off',
     '@typescript-eslint/adjacent-overload-signatures': 'error',
@@ -80,15 +80,6 @@ module.exports = {
         path: 'always',
         types: 'prefer-import',
         lib: 'always',
-      },
-    ],
-    '@typescript-eslint/tslint/config': [
-      'error',
-      {
-        rules: {
-          'import-spacing': true,
-          whitespace: true,
-        },
       },
     ],
     '@typescript-eslint/type-annotation-spacing': 'error',

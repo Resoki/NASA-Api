@@ -1,0 +1,18 @@
+<div>
+  <div class="grid grid-cols-2 gap-4" v-if='isFetch'>
+      <div >
+        <h1 class='text-white font-medium'>Astronomy Picture of the Day</h1>
+      <img  class='ml-4' style='width: 500px; height: 400px; border: 1px solid white;' :src='imageLink'/>
+      <p style='color: white'>{{title}} | {{copyright}}</p>
+
+    </div>
+    <div >
+      <p class='text-white font-medium mt-4'>Description: </p>
+      <p style='color: white'>{{explanation}}</p>
+      <div style='display:flex; justify-content: center;'>
+      <img class="block h-20 w-auto mr-4 mt-4" src="https://th.bing.com/th/id/R.974cae231088cc9ccfd44fde806c1cb3?rik=ndn81KfhQXBvfA&pid=ImgRaw&r=0" alt="Workflow">
+    </div>
+    </div>
+
+</div>
+</div>
